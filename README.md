@@ -6,7 +6,7 @@
 - However OMNeT++ does not include simulation model to simulate automotive control networks. 
 - Here, we have distributed source code of a simulation model for Controller Area Network (CAN) for OMNeT++ as an open-source.
 - Anyone can download the source code at Github and simulate the CAN network. However, the distributed source code is a beta version that may include some bugs.
-- We have also distributed a CAN-Ethernet GW model as an experimental version. It can be found Github.
+- We have also distributed a CAN-Ethernet GW model as an experimental version. It can be found at [Github](https://github.com/YutakaMatsubara/can-ethernet-gw-for-omnet).
 
 ## Features
 
@@ -66,4 +66,4 @@ $ make
 
 ## Contacts
 - We welcome feedback from users of our simulation model.
-- If you have any questions, please feel free to ask us by e-mail. You can find our contact information here.
+- If you have any questions, please feel free to ask us by e-mail. You can find our contact information [here](https://sites.google.com/site/yutakaertl/profile-e).
