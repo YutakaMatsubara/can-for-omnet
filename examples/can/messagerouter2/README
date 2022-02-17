@@ -1,0 +1,14 @@
+[6 Bus, 1 CanMessageRouter]
+
+* Constructure of Network
+
+There are 6 CAN Buses.
+The sender node 1 and the receiver node 1 are connected to CAN bus 1.
+The sender node 2 and the receiver node 2 are connected to CAN bus 2.
+...
+The sender node 6 and the receiver node 6 are connected to CAN bus 6.
+The CAN message router is located among these buses.
+
+* Behavior
+
+Each sender node sends CAN messages to receivers connected to different buses through the CAN message router.

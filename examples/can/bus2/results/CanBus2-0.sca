@@ -1,0 +1,628 @@
+version 2
+run CanBus2-0-20131006-11:53:21-71648
+attr configname CanBus2
+attr datetime 20131006-11:53:21
+attr experiment CanBus2
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network CanBus2
+attr processid 71648
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar CanBus2.Sender1.srv 	sentPk:count 	4
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar CanBus2.Sender1.srv 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar CanBus2.Sender1.srv 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar CanBus2.Sender1.srv 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic CanBus2.Sender1.srv 	endToEndDelay:histogram
+field count 0
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar CanBus2.Sender1.ctl 	"simulated time" 	0.060068585962
+scalar CanBus2.Sender1.ctl 	"frames/sec sent" 	0
+scalar CanBus2.Sender1.ctl 	"frames/sec rcvd" 	33.295273527251
+scalar CanBus2.Sender1.ctl 	"bits/sec sent" 	0
+scalar CanBus2.Sender1.ctl 	"bits/sec rcvd" 	2130.8975057441
+statistic CanBus2.Sender1.ctl 	queueLength:histogram
+field count 0
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  queueLength
+attr title  "queue length, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar CanBus2.Sender1.ctl 	dropmessageID:count 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, count"
+scalar CanBus2.Sender1.ctl 	dropmessageID:sum 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, sum"
+scalar CanBus2.Sender1.ctl 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar CanBus2.Sender1.ctl 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar CanBus2.Sender1.ctl 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar CanBus2.Sender1.ctl 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar CanBus2.Sender1.ctl 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar CanBus2.Sender1.ctl 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar CanBus2.Sender1.ctl 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar CanBus2.Sender1.ctl 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar CanBus2.Sender1.ctl 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar CanBus2.Sender1.ctl 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar CanBus2.Sender1.ctl 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar CanBus2.Sender1.ctl 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar CanBus2.Sender1.ctl 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar CanBus2.Sender1.ctl 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar CanBus2.Sender1.ctl 	passedUpPk:count 	2
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar CanBus2.Sender1.ctl 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar CanBus2.Sender1.ctl 	rxPkOk:count 	2
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar CanBus2.Sender1.ctl 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar CanBus2.Sender1.ctl 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar CanBus2.Sender1.ctl 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar CanBus2.Sender2.srv 	sentPk:count 	2
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar CanBus2.Sender2.srv 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar CanBus2.Sender2.srv 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar CanBus2.Sender2.srv 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic CanBus2.Sender2.srv 	endToEndDelay:histogram
+field count 0
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar CanBus2.Sender2.ctl 	"simulated time" 	0.060068585962
+scalar CanBus2.Sender2.ctl 	"frames/sec sent" 	0
+scalar CanBus2.Sender2.ctl 	"frames/sec rcvd" 	49.942910290877
+scalar CanBus2.Sender2.ctl 	"bits/sec sent" 	0
+scalar CanBus2.Sender2.ctl 	"bits/sec rcvd" 	3196.3462586161
+statistic CanBus2.Sender2.ctl 	queueLength:histogram
+field count 0
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  queueLength
+attr title  "queue length, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar CanBus2.Sender2.ctl 	dropmessageID:count 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, count"
+scalar CanBus2.Sender2.ctl 	dropmessageID:sum 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, sum"
+scalar CanBus2.Sender2.ctl 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar CanBus2.Sender2.ctl 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar CanBus2.Sender2.ctl 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar CanBus2.Sender2.ctl 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar CanBus2.Sender2.ctl 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar CanBus2.Sender2.ctl 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar CanBus2.Sender2.ctl 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar CanBus2.Sender2.ctl 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar CanBus2.Sender2.ctl 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar CanBus2.Sender2.ctl 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar CanBus2.Sender2.ctl 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar CanBus2.Sender2.ctl 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar CanBus2.Sender2.ctl 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar CanBus2.Sender2.ctl 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar CanBus2.Sender2.ctl 	passedUpPk:count 	3
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar CanBus2.Sender2.ctl 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar CanBus2.Sender2.ctl 	rxPkOk:count 	3
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar CanBus2.Sender2.ctl 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar CanBus2.Sender2.ctl 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar CanBus2.Sender2.ctl 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar CanBus2.Receiver.rcv 	rcvdPk:count 	3
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar CanBus2.Receiver.rcv 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic CanBus2.Receiver.rcv 	endToEndDelay:histogram
+field count 3
+field mean 0.000162196746
+field stddev 6.581229459429e-05
+field sum 0.000486590238
+field sqrsum 8.7585869478497e-08
+field min 0.0001242
+field max 0.000238190238
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	6.7204881e-05	0
+bin	7.48042302e-05	0
+bin	8.24035794e-05	0
+bin	9.00029286e-05	0
+bin	9.76022778e-05	0
+bin	0.000105201627	0
+bin	0.0001128009762	0
+bin	0.0001204003254	2
+bin	0.0001279996746	0
+bin	0.0001355990238	0
+bin	0.000143198373	0
+bin	0.0001507977222	0
+bin	0.0001583970714	0
+bin	0.0001659964206	0
+bin	0.0001735957698	0
+bin	0.000181195119	0
+bin	0.0001887944682	0
+bin	0.0001963938174	0
+bin	0.0002039931666	0
+bin	0.0002115925158	0
+bin	0.000219191865	0
+bin	0.0002267912142	0
+bin	0.0002343905634	1
+bin	0.0002419899126	0
+bin	0.0002495892618	0
+bin	0.000257188611	0
+bin	0.0002647879602	0
+bin	0.0002723873094	0
+bin	0.0002799866586	0
+bin	0.0002875860078	0
+bin	0.000295185357	0
+scalar CanBus2.Receiver.ctl 	"simulated time" 	0.060068585962
+scalar CanBus2.Receiver.ctl 	"frames/sec sent" 	0
+scalar CanBus2.Receiver.ctl 	"frames/sec rcvd" 	83.238183818128
+scalar CanBus2.Receiver.ctl 	"bits/sec sent" 	0
+scalar CanBus2.Receiver.ctl 	"bits/sec rcvd" 	5327.2437643602
+statistic CanBus2.Receiver.ctl 	queueLength:histogram
+field count 0
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  queueLength
+attr title  "queue length, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar CanBus2.Receiver.ctl 	dropmessageID:count 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, count"
+scalar CanBus2.Receiver.ctl 	dropmessageID:sum 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, sum"
+scalar CanBus2.Receiver.ctl 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar CanBus2.Receiver.ctl 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar CanBus2.Receiver.ctl 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar CanBus2.Receiver.ctl 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar CanBus2.Receiver.ctl 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar CanBus2.Receiver.ctl 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar CanBus2.Receiver.ctl 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar CanBus2.Receiver.ctl 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar CanBus2.Receiver.ctl 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar CanBus2.Receiver.ctl 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar CanBus2.Receiver.ctl 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar CanBus2.Receiver.ctl 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar CanBus2.Receiver.ctl 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar CanBus2.Receiver.ctl 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar CanBus2.Receiver.ctl 	passedUpPk:count 	5
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar CanBus2.Receiver.ctl 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar CanBus2.Receiver.ctl 	rxPkOk:count 	5
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar CanBus2.Receiver.ctl 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar CanBus2.Receiver.ctl 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar CanBus2.Receiver.ctl 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar CanBus2.bus 	"simulated time" 	0.060068585962
+scalar CanBus2.bus 	"messages handled" 	0
+scalar CanBus2.bus 	messages/sec 	0
+statistic CanBus2.bus 	busload:histogram
+field count 0
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  busload
+attr title  "bus load, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar CanBus2.bus 	busTransmitStart:count 	5
+attr source  busTransmitStart
+attr title  "bus transmit start, count"

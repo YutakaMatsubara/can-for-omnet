@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<NodeInfo>
+   <Node ID="Sender">
+      <SendMessage ID="15" SendInterval="100" SendTime="0" DLC="8" Offset="5"/>
+      <SendMessage ID="20" SendInterval="20" SendTime="0" DLC="8" Offset="0"/>
+      <SendMessage ID="25" SendInterval="0" SendTime="1 10 100" DLC="8" Offset="0"/>
+   </Node>
+   <Node ID="Sender1">
+       <SendMessage ID="11" SendInterval="20" SendTime="0" DLC="8" Offset="5"/>
+   </Node>
+   <Node ID="Sender2">
+       <SendMessage ID="21" SendInterval="40" SendTime="0" DLC="8" Offset="8"/>
+   </Node>
+   <Node ID="Sender3">
+       <SendMessage ID="31" SendInterval="40" SendTime="0" DLC="8" Offset="10"/>
+   </Node>
+   <Node ID="Sender4">
+       <SendMessage ID="41" SendInterval="100" SendTime="0" DLC="8" Offset="7"/>
+   </Node>
+   <Node ID="Sender5">
+       <SendMessage ID="51" SendInterval="12" SendTime="0" DLC="8" Offset="0"/>
+   </Node>
+   <Node ID="Sender6">
+       <SendMessage ID="61" SendInterval="35" SendTime="0" DLC="8" Offset="0"/>
+   </Node>
+</NodeInfo>

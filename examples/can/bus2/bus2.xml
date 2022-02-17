@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<NodeInfo>
+   <Node ID="Sender">
+       <SendMessage ID="11a" SendInterval="20" SendTime="0" DLC="8" Offset="1"/>
+       <SendMessage ID="10a" SendInterval="20" SendTime="0" DLC="8" Offset="1"/>
+       <SendMessage ID="3c" SendInterval="100" SendTime="0" DLC="8" Offset="2"/>
+       <SendMessage ID="61" SendInterval="0" SendTime="1 10 100" DLC="8" Offset="0"/>
+  </Node>
+   <Node ID="Sender1">
+       <SendMessage ID="11" SendInterval="20" SendTime="0" DLC="8" Offset="10"/>
+   </Node>
+   <Node ID="Sender2">
+       <SendMessage ID="21" SendInterval="40" SendTime="0" DLC="8" Offset="0"/>
+   </Node>
+</NodeInfo>

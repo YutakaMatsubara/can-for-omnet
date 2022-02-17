@@ -1,0 +1,16 @@
+Example of CAN Model
+
+[1 Sender, 1 Receiver]
+__________________
+  |               |
+Sender    Receiver
+
+* Constructure of Network
+
+This network has a CAN bus to which a sender node and a receive node
+are connected.
+
+* Behavior
+
+The sender node 1 sends CAN messages which are specified in bus1.xml
+periodically.

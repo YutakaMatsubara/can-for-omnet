@@ -1,0 +1,34 @@
+<RoutingMap ID="1">
+    <MessageInfo ID="21">
+        <RoutingInfo Name="CAN6" Send="0"/>
+        <RoutingInfo Name="CAN1" Send="0"/>
+        <RoutingInfo Name="CAN2" Send="0"/>
+        <RoutingInfo Name="CAN3" Send="0"/>
+        <RoutingInfo Name="CAN4" Send="1"/>
+        <RoutingInfo Name="CAN5" Send="1"/>
+    </MessageInfo>
+    <MessageInfo ID="31">
+        <RoutingInfo Name="CAN6" Send="0"/>
+        <RoutingInfo Name="CAN1" Send="0"/>
+        <RoutingInfo Name="CAN2" Send="1"/>
+        <RoutingInfo Name="CAN3" Send="0"/>
+        <RoutingInfo Name="CAN4" Send="1"/>
+        <RoutingInfo Name="CAN5" Send="0"/>
+    </MessageInfo>
+    <MessageInfo ID="41">
+        <RoutingInfo Name="CAN6" Send="0"/>
+        <RoutingInfo Name="CAN1" Send="1"/>
+        <RoutingInfo Name="CAN2" Send="1"/>
+        <RoutingInfo Name="CAN3" Send="1"/>
+        <RoutingInfo Name="CAN4" Send="0"/>
+        <RoutingInfo Name="CAN5" Send="0"/>
+    </MessageInfo>
+    <MessageInfo ID="51">
+        <RoutingInfo Name="CAN6" Send="0"/>
+        <RoutingInfo Name="CAN1" Send="0"/>
+        <RoutingInfo Name="CAN2" Send="0"/>
+        <RoutingInfo Name="CAN3" Send="0"/>
+        <RoutingInfo Name="CAN4" Send="1"/>
+        <RoutingInfo Name="CAN5" Send="1"/>
+    </MessageInfo>
+</RoutingMap>

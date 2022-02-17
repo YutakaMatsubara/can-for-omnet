@@ -1,0 +1,10 @@
+[2 Senders, 1 Receiver]
+
+* Constructure of Network
+
+This network has a CAN bus to which 2 sender node and 1 receiver node are connected.
+
+* Behavior
+
+The sender node 1 and the sender node 2 send CAN messages which are specified in bus.xml periodically.
+The receiver node receives only CAN messages to be handled through message filtering.

@@ -1,0 +1,18 @@
+<RoutingMap ID="1">
+    <MessageInfo ID="5">
+        <RoutingInfo Name="CAN1" Send="0"/>
+        <RoutingInfo Name="CAN2" Send="0"/>
+    </MessageInfo>
+    <MessageInfo ID="10">
+        <RoutingInfo Name="CAN1" Send="0"/>
+        <RoutingInfo Name="CAN2" Send="1"/>
+    </MessageInfo>
+    <MessageInfo ID="11">
+        <RoutingInfo Name="CAN1" Send="1"/>
+        <RoutingInfo Name="CAN2" Send="1"/>
+    </MessageInfo>
+    <MessageInfo ID="2a">
+        <RoutingInfo Name="CAN1" Send="0"/>
+        <RoutingInfo Name="CAN2" Send="0"/>
+    </MessageInfo>
+</RoutingMap>

@@ -1,0 +1,17 @@
+[2 Buses, 1 CAN Message Router]
+
+* Constructure of Network
+
+There are 2 CAN Buses. The sender node 1 and the receiver node 1 are
+connected to CAN bus 1. The sender node 2 and the receiver node 2 are
+connected to CAN bus 2. The CAN message router is located between CAN
+bus 1 and CAN bus 2.
+
+* Behavior
+
+The sender node 1 and the sender node 2 send CAN messages which are
+specified in bus.xml periodically.  The receiver nodes receive only
+CAN messages to be handled through message filtering.  The sender node
+1 can send a message to receiver node 2 through the CAN message
+router.
+

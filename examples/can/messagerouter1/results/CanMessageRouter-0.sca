@@ -1,0 +1,1120 @@
+version 2
+run CanMessageRouter-0-20131006-12:13:09-72057
+attr configname CanMessageRouter
+attr datetime 20131006-12:13:09
+attr experiment CanMessageRouter
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network CanMessageRouter
+attr processid 72057
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar CanMessageRouter.Sender1.srv 	sentPk:count 	5995
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar CanMessageRouter.Sender1.srv 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar CanMessageRouter.Sender1.srv 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar CanMessageRouter.Sender1.srv 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic CanMessageRouter.Sender1.srv 	endToEndDelay:histogram
+field count 0
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar CanMessageRouter.Sender1.ctl 	"simulated time" 	120
+scalar CanMessageRouter.Sender1.ctl 	"frames/sec sent" 	0
+scalar CanMessageRouter.Sender1.ctl 	"frames/sec rcvd" 	49.958333333333
+scalar CanMessageRouter.Sender1.ctl 	"bits/sec sent" 	0
+scalar CanMessageRouter.Sender1.ctl 	"bits/sec rcvd" 	3197.3333333333
+statistic CanMessageRouter.Sender1.ctl 	queueLength:histogram
+field count 0
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  queueLength
+attr title  "queue length, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar CanMessageRouter.Sender1.ctl 	dropmessageID:count 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, count"
+scalar CanMessageRouter.Sender1.ctl 	dropmessageID:sum 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, sum"
+scalar CanMessageRouter.Sender1.ctl 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar CanMessageRouter.Sender1.ctl 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar CanMessageRouter.Sender1.ctl 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar CanMessageRouter.Sender1.ctl 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar CanMessageRouter.Sender1.ctl 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar CanMessageRouter.Sender1.ctl 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar CanMessageRouter.Sender1.ctl 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar CanMessageRouter.Sender1.ctl 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar CanMessageRouter.Sender1.ctl 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar CanMessageRouter.Sender1.ctl 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar CanMessageRouter.Sender1.ctl 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar CanMessageRouter.Sender1.ctl 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar CanMessageRouter.Sender1.ctl 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar CanMessageRouter.Sender1.ctl 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar CanMessageRouter.Sender1.ctl 	passedUpPk:count 	5995
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar CanMessageRouter.Sender1.ctl 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar CanMessageRouter.Sender1.ctl 	rxPkOk:count 	5995
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar CanMessageRouter.Sender1.ctl 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar CanMessageRouter.Sender1.ctl 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar CanMessageRouter.Sender1.ctl 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar CanMessageRouter.Sender2.srv 	sentPk:count 	2995
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar CanMessageRouter.Sender2.srv 	sentPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar CanMessageRouter.Sender2.srv 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar CanMessageRouter.Sender2.srv 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic CanMessageRouter.Sender2.srv 	endToEndDelay:histogram
+field count 0
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar CanMessageRouter.Sender2.ctl 	"simulated time" 	120
+scalar CanMessageRouter.Sender2.ctl 	"frames/sec sent" 	0
+scalar CanMessageRouter.Sender2.ctl 	"frames/sec rcvd" 	49.958333333333
+scalar CanMessageRouter.Sender2.ctl 	"bits/sec sent" 	0
+scalar CanMessageRouter.Sender2.ctl 	"bits/sec rcvd" 	3197.3333333333
+statistic CanMessageRouter.Sender2.ctl 	queueLength:histogram
+field count 0
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  queueLength
+attr title  "queue length, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar CanMessageRouter.Sender2.ctl 	dropmessageID:count 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, count"
+scalar CanMessageRouter.Sender2.ctl 	dropmessageID:sum 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, sum"
+scalar CanMessageRouter.Sender2.ctl 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar CanMessageRouter.Sender2.ctl 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar CanMessageRouter.Sender2.ctl 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar CanMessageRouter.Sender2.ctl 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar CanMessageRouter.Sender2.ctl 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar CanMessageRouter.Sender2.ctl 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar CanMessageRouter.Sender2.ctl 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar CanMessageRouter.Sender2.ctl 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar CanMessageRouter.Sender2.ctl 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar CanMessageRouter.Sender2.ctl 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar CanMessageRouter.Sender2.ctl 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar CanMessageRouter.Sender2.ctl 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar CanMessageRouter.Sender2.ctl 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar CanMessageRouter.Sender2.ctl 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar CanMessageRouter.Sender2.ctl 	passedUpPk:count 	5995
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar CanMessageRouter.Sender2.ctl 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar CanMessageRouter.Sender2.ctl 	rxPkOk:count 	5995
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar CanMessageRouter.Sender2.ctl 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar CanMessageRouter.Sender2.ctl 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar CanMessageRouter.Sender2.ctl 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar CanMessageRouter.Receiver1.rcv 	rcvdPk:count 	11990
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar CanMessageRouter.Receiver1.rcv 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic CanMessageRouter.Receiver1.rcv 	endToEndDelay:histogram
+field count 11990
+field mean 0.00037229999999999
+field stddev 0.00012410517546972
+field sum 4.4638769999999
+field sqrsum 0.001846557119
+field min 0.0002482
+field max 0.0004964
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	0.0001241	0
+bin	0.00014064666666667	0
+bin	0.00015719333333333	0
+bin	0.00017374	0
+bin	0.00019028666666667	0
+bin	0.00020683333333333	0
+bin	0.00022338	0
+bin	0.00023992666666667	5995
+bin	0.00025647333333333	0
+bin	0.00027302	0
+bin	0.00028956666666667	0
+bin	0.00030611333333333	0
+bin	0.00032266	0
+bin	0.00033920666666667	0
+bin	0.00035575333333333	0
+bin	0.0003723	0
+bin	0.00038884666666667	0
+bin	0.00040539333333333	0
+bin	0.00042194	0
+bin	0.00043848666666667	0
+bin	0.00045503333333333	0
+bin	0.00047158	0
+bin	0.00048812666666667	5995
+bin	0.00050467333333333	0
+bin	0.00052122	0
+bin	0.00053776666666667	0
+bin	0.00055431333333333	0
+bin	0.00057086	0
+bin	0.00058740666666667	0
+bin	0.00060395333333333	0
+bin	0.0006205	0
+scalar CanMessageRouter.Receiver1.ctl 	"simulated time" 	120
+scalar CanMessageRouter.Receiver1.ctl 	"frames/sec sent" 	0
+scalar CanMessageRouter.Receiver1.ctl 	"frames/sec rcvd" 	99.916666666667
+scalar CanMessageRouter.Receiver1.ctl 	"bits/sec sent" 	0
+scalar CanMessageRouter.Receiver1.ctl 	"bits/sec rcvd" 	6394.6666666667
+statistic CanMessageRouter.Receiver1.ctl 	queueLength:histogram
+field count 0
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  queueLength
+attr title  "queue length, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar CanMessageRouter.Receiver1.ctl 	dropmessageID:count 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, count"
+scalar CanMessageRouter.Receiver1.ctl 	dropmessageID:sum 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, sum"
+scalar CanMessageRouter.Receiver1.ctl 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar CanMessageRouter.Receiver1.ctl 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar CanMessageRouter.Receiver1.ctl 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar CanMessageRouter.Receiver1.ctl 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar CanMessageRouter.Receiver1.ctl 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar CanMessageRouter.Receiver1.ctl 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar CanMessageRouter.Receiver1.ctl 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar CanMessageRouter.Receiver1.ctl 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar CanMessageRouter.Receiver1.ctl 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar CanMessageRouter.Receiver1.ctl 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar CanMessageRouter.Receiver1.ctl 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar CanMessageRouter.Receiver1.ctl 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar CanMessageRouter.Receiver1.ctl 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar CanMessageRouter.Receiver1.ctl 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar CanMessageRouter.Receiver1.ctl 	passedUpPk:count 	11990
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar CanMessageRouter.Receiver1.ctl 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar CanMessageRouter.Receiver1.ctl 	rxPkOk:count 	11990
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar CanMessageRouter.Receiver1.ctl 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar CanMessageRouter.Receiver1.ctl 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar CanMessageRouter.Receiver1.ctl 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar CanMessageRouter.Receiver2.rcv 	rcvdPk:count 	8990
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar CanMessageRouter.Receiver2.rcv 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic CanMessageRouter.Receiver2.rcv 	endToEndDelay:histogram
+field count 8990
+field mean 0.00041487798644502
+field stddev 0.00011735220922704
+field sum 3.7297530981408
+field sqrsum 0.0016711848374368
+field min 0.0002482
+field max 0.000733998049
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	1.7020334e-05	0
+bin	4.7844289466667e-05	0
+bin	7.8668244933333e-05	0
+bin	0.0001094922004	0
+bin	0.00014031615586667	0
+bin	0.00017114011133333	0
+bin	0.0002019640668	0
+bin	0.00023278802226667	2955
+bin	0.00026361197773333	4
+bin	0.0002944359332	6
+bin	0.00032525988866667	6
+bin	0.00035608384413333	4
+bin	0.0003869077996	6
+bin	0.00041773175506667	6
+bin	0.00044855571053333	4
+bin	0.000479379666	5959
+bin	0.00051020362146667	6
+bin	0.00054102757693333	6
+bin	0.0005718515324	4
+bin	0.00060267548786667	6
+bin	0.00063349944333333	6
+bin	0.0006643233988	4
+bin	0.00069514735426667	6
+bin	0.00072597130973333	2
+bin	0.0007567952652	0
+bin	0.00078761922066667	0
+bin	0.00081844317613333	0
+bin	0.0008492671316	0
+bin	0.00088009108706667	0
+bin	0.00091091504253333	0
+bin	0.000941738998	0
+scalar CanMessageRouter.Receiver2.ctl 	"simulated time" 	120
+scalar CanMessageRouter.Receiver2.ctl 	"frames/sec sent" 	0
+scalar CanMessageRouter.Receiver2.ctl 	"frames/sec rcvd" 	74.916666666667
+scalar CanMessageRouter.Receiver2.ctl 	"bits/sec sent" 	0
+scalar CanMessageRouter.Receiver2.ctl 	"bits/sec rcvd" 	4794.6666666667
+statistic CanMessageRouter.Receiver2.ctl 	queueLength:histogram
+field count 0
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  queueLength
+attr title  "queue length, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar CanMessageRouter.Receiver2.ctl 	dropmessageID:count 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, count"
+scalar CanMessageRouter.Receiver2.ctl 	dropmessageID:sum 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, sum"
+scalar CanMessageRouter.Receiver2.ctl 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar CanMessageRouter.Receiver2.ctl 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar CanMessageRouter.Receiver2.ctl 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar CanMessageRouter.Receiver2.ctl 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar CanMessageRouter.Receiver2.ctl 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar CanMessageRouter.Receiver2.ctl 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar CanMessageRouter.Receiver2.ctl 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar CanMessageRouter.Receiver2.ctl 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar CanMessageRouter.Receiver2.ctl 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar CanMessageRouter.Receiver2.ctl 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar CanMessageRouter.Receiver2.ctl 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar CanMessageRouter.Receiver2.ctl 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar CanMessageRouter.Receiver2.ctl 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar CanMessageRouter.Receiver2.ctl 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar CanMessageRouter.Receiver2.ctl 	passedUpPk:count 	8990
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar CanMessageRouter.Receiver2.ctl 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar CanMessageRouter.Receiver2.ctl 	rxPkOk:count 	8990
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar CanMessageRouter.Receiver2.ctl 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar CanMessageRouter.Receiver2.ctl 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar CanMessageRouter.Receiver2.ctl 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar CanMessageRouter.bus1 	"simulated time" 	120
+scalar CanMessageRouter.bus1 	"messages handled" 	0
+scalar CanMessageRouter.bus1 	messages/sec 	0
+statistic CanMessageRouter.bus1 	busload:histogram
+field count 120
+field mean 0.024179833333333
+field stddev 9.191467849137e-05
+field sum 2.90158
+field sqrsum 0.070160726152
+field min 0.023716
+field max 0.0242
+attr interpolationmode  none
+attr source  busload
+attr title  "bus load, histogram"
+bin	-INF	0
+bin	0.023474	0
+bin	0.023506266666667	0
+bin	0.023538533333333	0
+bin	0.0235708	0
+bin	0.023603066666667	0
+bin	0.023635333333333	0
+bin	0.0236676	0
+bin	0.023699866666667	4
+bin	0.023732133333333	0
+bin	0.0237644	0
+bin	0.023796666666667	0
+bin	0.023828933333333	0
+bin	0.0238612	0
+bin	0.023893466666667	0
+bin	0.023925733333333	0
+bin	0.023958	2
+bin	0.023990266666667	0
+bin	0.024022533333333	0
+bin	0.0240548	0
+bin	0.024087066666667	0
+bin	0.024119333333333	0
+bin	0.0241516	0
+bin	0.024183866666667	114
+bin	0.024216133333333	0
+bin	0.0242484	0
+bin	0.024280666666667	0
+bin	0.024312933333333	0
+bin	0.0243452	0
+bin	0.024377466666667	0
+bin	0.024409733333333	0
+bin	0.024442	0
+scalar CanMessageRouter.bus1 	busTransmitStart:count 	11990
+attr source  busTransmitStart
+attr title  "bus transmit start, count"
+scalar CanMessageRouter.bus2 	"simulated time" 	120
+scalar CanMessageRouter.bus2 	"messages handled" 	0
+scalar CanMessageRouter.bus2 	messages/sec 	0
+statistic CanMessageRouter.bus2 	busload:histogram
+field count 119
+field mean 0.018129663865546
+field stddev 6.742394049914e-05
+field sum 2.15743
+field sqrsum 0.03911401714
+field min 0.017908
+field max 0.01815
+attr interpolationmode  none
+attr source  busload
+attr title  "bus load, histogram"
+bin	-INF	0
+bin	0.017787	0
+bin	0.017803133333333	0
+bin	0.017819266666667	0
+bin	0.0178354	0
+bin	0.017851533333333	0
+bin	0.017867666666667	0
+bin	0.0178838	0
+bin	0.017899933333333	10
+bin	0.017916066666667	0
+bin	0.0179322	0
+bin	0.017948333333333	0
+bin	0.017964466666667	0
+bin	0.0179806	0
+bin	0.017996733333333	0
+bin	0.018012866666667	0
+bin	0.018029	0
+bin	0.018045133333333	0
+bin	0.018061266666667	0
+bin	0.0180774	0
+bin	0.018093533333333	0
+bin	0.018109666666667	0
+bin	0.0181258	0
+bin	0.018141933333333	109
+bin	0.018158066666667	0
+bin	0.0181742	0
+bin	0.018190333333333	0
+bin	0.018206466666667	0
+bin	0.0182226	0
+bin	0.018238733333333	0
+bin	0.018254866666667	0
+bin	0.018271	0
+scalar CanMessageRouter.bus2 	busTransmitStart:count 	8990
+attr source  busTransmitStart
+attr title  "bus transmit start, count"
+scalar CanMessageRouter.router.router 	"simulated time" 	120
+scalar CanMessageRouter.router.ctl[0] 	"simulated time" 	120
+scalar CanMessageRouter.router.ctl[0] 	"frames/sec sent" 	0
+scalar CanMessageRouter.router.ctl[0] 	"frames/sec rcvd" 	49.958333333333
+scalar CanMessageRouter.router.ctl[0] 	"bits/sec sent" 	0
+scalar CanMessageRouter.router.ctl[0] 	"bits/sec rcvd" 	3197.3333333333
+statistic CanMessageRouter.router.ctl[0] 	queueLength:histogram
+field count 0
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  queueLength
+attr title  "queue length, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar CanMessageRouter.router.ctl[0] 	dropmessageID:count 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, count"
+scalar CanMessageRouter.router.ctl[0] 	dropmessageID:sum 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, sum"
+scalar CanMessageRouter.router.ctl[0] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar CanMessageRouter.router.ctl[0] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar CanMessageRouter.router.ctl[0] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar CanMessageRouter.router.ctl[0] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar CanMessageRouter.router.ctl[0] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar CanMessageRouter.router.ctl[0] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar CanMessageRouter.router.ctl[0] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar CanMessageRouter.router.ctl[0] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar CanMessageRouter.router.ctl[0] 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar CanMessageRouter.router.ctl[0] 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar CanMessageRouter.router.ctl[0] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar CanMessageRouter.router.ctl[0] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar CanMessageRouter.router.ctl[0] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar CanMessageRouter.router.ctl[0] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar CanMessageRouter.router.ctl[0] 	passedUpPk:count 	5995
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar CanMessageRouter.router.ctl[0] 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar CanMessageRouter.router.ctl[0] 	rxPkOk:count 	5995
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar CanMessageRouter.router.ctl[0] 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar CanMessageRouter.router.ctl[0] 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar CanMessageRouter.router.ctl[0] 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
+scalar CanMessageRouter.router.ctl[1] 	"simulated time" 	120
+scalar CanMessageRouter.router.ctl[1] 	"frames/sec sent" 	0
+scalar CanMessageRouter.router.ctl[1] 	"frames/sec rcvd" 	24.958333333333
+scalar CanMessageRouter.router.ctl[1] 	"bits/sec sent" 	0
+scalar CanMessageRouter.router.ctl[1] 	"bits/sec rcvd" 	1597.3333333333
+statistic CanMessageRouter.router.ctl[1] 	queueLength:histogram
+field count 0
+field mean 0
+field stddev nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr source  queueLength
+attr title  "queue length, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar CanMessageRouter.router.ctl[1] 	dropmessageID:count 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, count"
+scalar CanMessageRouter.router.ctl[1] 	dropmessageID:sum 	0
+attr interpolationmode  none
+attr source  dropmessageID
+attr title  "dropped message ID, sum"
+scalar CanMessageRouter.router.ctl[1] 	backoff:count 	0
+attr interpolationmode  none
+attr title  "backoff, count"
+scalar CanMessageRouter.router.ctl[1] 	collision:count 	0
+attr interpolationmode  none
+attr title  "collision, count"
+scalar CanMessageRouter.router.ctl[1] 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar CanMessageRouter.router.ctl[1] 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar CanMessageRouter.router.ctl[1] 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar CanMessageRouter.router.ctl[1] 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+scalar CanMessageRouter.router.ctl[1] 	droppedPkIfaceDown:count 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, count"
+scalar CanMessageRouter.router.ctl[1] 	droppedPkIfaceDown:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkIfaceDown
+attr title  "packets dropped/interface down, sum(packetBytes)"
+scalar CanMessageRouter.router.ctl[1] 	rxPkFromHL:count 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, count"
+scalar CanMessageRouter.router.ctl[1] 	rxPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkFromHL
+attr title  "packet bytes from higher layer, sum(packetBytes)"
+scalar CanMessageRouter.router.ctl[1] 	rxPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units received, count"
+scalar CanMessageRouter.router.ctl[1] 	rxPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units received, sum"
+scalar CanMessageRouter.router.ctl[1] 	txPausePkUnits:count 	0
+attr interpolationmode  none
+attr title  "pause units sent, count"
+scalar CanMessageRouter.router.ctl[1] 	txPausePkUnits:sum 	0
+attr interpolationmode  none
+attr title  "pause units sent, sum"
+scalar CanMessageRouter.router.ctl[1] 	passedUpPk:count 	2995
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar CanMessageRouter.router.ctl[1] 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar CanMessageRouter.router.ctl[1] 	rxPkOk:count 	2995
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, count"
+scalar CanMessageRouter.router.ctl[1] 	rxPkOk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rxPkOk
+attr title  "packets received OK, sum(packetBytes)"
+scalar CanMessageRouter.router.ctl[1] 	txPk:count 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, count"
+scalar CanMessageRouter.router.ctl[1] 	txPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  txPk
+attr title  "packets transmitted, sum(packetBytes)"
